@@ -1,0 +1,18 @@
+/* This will add multiple nested declarations */
+$font-sizes: (
+  "small": 12px,
+  "medium": 14px,
+  "big": 16px
+);
+
+body {
+  font-size: map-get($map: $font-sizes, $key: medium);
+
+  h1 {
+    font-size: map-get($map: $font-sizes, $key: big);
+  }
+
+  h1.smaller {
+    font-size: map-get($map: $font-sizes, $key: small);
+  }
+}
