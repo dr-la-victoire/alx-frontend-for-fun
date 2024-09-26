@@ -1,0 +1,11 @@
+/* This will apply styles to first child elements nested in body tag */
+$text-color: #3d3d3d;
+$text-color-two: #ff0000;
+
+body {
+  color: $text-color;
+
+  > .red {
+    color: $text-color-two;
+  }
+}
