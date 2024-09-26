@@ -1,0 +1,11 @@
+/* This will add hover styles to the button tags */
+$text-color-two: #ff0000;
+$text-color-hover: #00ff00;
+
+button {
+  color: $text-color-two;
+
+  &:hover {
+    color: $text-color-hover;
+  }
+}
