@@ -1,0 +1,6 @@
+/* We're creating classes of different widths with a for loop */
+@for $i from 1 through 4 {
+  .col-#{$i} {
+    width: (100% / $i);
+  }
+}
